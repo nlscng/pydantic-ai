@@ -20,6 +20,7 @@ logfire.instrument_pydantic_ai()
 class MyModel(BaseModel):
     city: str
     country: str
+    state: str
 
 
 model = os.getenv('PYDANTIC_AI_MODEL', 'openai:gpt-4o')
